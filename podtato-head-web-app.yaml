@@ -7,9 +7,10 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    app: helloservice
   name: helloservice
   namespace: demospace
+  labels:
+    app: helloservice
 spec:
   replicas: 1
   selector:
